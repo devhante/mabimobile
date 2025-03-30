@@ -63,7 +63,7 @@ function ItemInfo() {
                         <div className="craft-time">제작 시간 : {formatTime(craftData.time)}</div>
                         <div className="craft-ingredient-title">재료 </div>
                         <div className="craft-ingredients">
-                            {craftData.ingredients?.map((item: ItemCraftIngredient) => <div key={item.ingredientId}><Link to={`/mabimobile/${item.ingredientId}`}>{item.itemName}</Link>  {item.quantity}</div>)}
+                            {craftData.ingredients?.map((item: ItemCraftIngredient) => <div key={item.ingredientId}><Link to={`/${item.ingredientId}`}>{item.itemName}</Link>  {item.quantity}</div>)}
                         </div>
                     </div>
                 : <></> }

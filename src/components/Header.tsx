@@ -36,7 +36,7 @@ function Header() {
             <div className="container">
                 <div className="logo-title">
                     <img className="logo" src={logo} width={24} height={24} />
-                    <div className="title"><Link to="/mabimobile">마비노기 모바일 데이터베이스</Link></div>
+                    <div className="title"><Link to="">마비노기 모바일 데이터베이스</Link></div>
                 </div>
                 <div className="input-container">
                     <img className="search-logo" src={search} width={16} height={16} />
