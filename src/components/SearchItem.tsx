@@ -13,7 +13,7 @@ function SearchItem(props: SearchItemProps) {
     const navigate = useNavigate();
     const handleClick = () => {
         setSearchText("");
-        navigate(`/${props.item.itemId}`);
+        navigate(`/mabimobile/${props.item.itemId}`);
     };
 
     return (

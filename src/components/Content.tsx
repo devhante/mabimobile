@@ -16,7 +16,7 @@ function Content() {
                     {searchItems?.map((item: Item) => <SearchItem item={item} key={item.itemId} />)}
                 </div>
                 <Routes>
-                    <Route path="/:itemId" element={<ItemInfo />} />
+                    <Route path="/mabimobile/:itemId" element={<ItemInfo />} />
                 </Routes>
             </div>
         </div>
