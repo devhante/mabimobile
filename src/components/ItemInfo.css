@@ -1,0 +1,97 @@
+.ItemInfo {
+    font-family: 'NEXON Lv1 Gothic OTF';
+}
+
+.ItemInfo .top {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: stretch;
+}
+
+.ItemInfo .image-container {
+    margin-right: 32px;
+    width: 128px;
+    height: 128px;
+}
+
+.ItemInfo .image-container img {
+    width: 128px;
+    height: 128px;
+}
+
+.ItemInfo .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 128px;
+    text-align: left;
+    padding: 16px 0px;
+}
+
+.ItemInfo .name {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.ItemInfo .tag {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+}
+
+.ItemInfo .tag > div {
+    padding: 8px 20px;
+    background-color: #B2B2B2;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.ItemInfo .bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+}
+
+.ItemInfo .craft-card {
+    width: 320px;
+    display: flex;
+    padding: 24px;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #F5F5F5;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: start;
+    font-size: 20px;
+}
+
+.ItemInfo .craft-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.ItemInfo .craft-location {
+    margin-bottom: 8px;
+}
+
+.ItemInfo .craft-time {
+    margin-bottom: 32px;
+}
+
+.ItemInfo .craft-ingredient-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.ItemInfo .craft-ingredients {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.ItemInfo .craft-ingredients > div {
+    margin-bottom: 8px;
+}

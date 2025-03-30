@@ -1,0 +1,17 @@
+.Content {
+    display: flex;
+    justify-content: center;
+}
+
+.Content > div {
+    width: 100%;
+}
+
+.Content .container {
+    max-width: 1536px;
+}
+
+.Content .search-items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, auto));
+}
