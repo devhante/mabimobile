@@ -19,7 +19,7 @@ function SearchItem(props: SearchItemProps) {
     return (
         <div className="SearchItem" onClick={handleClick}>
             <div className="image-container">
-                <img src={`/Fleta_00.png`} />
+                <img src={`${process.env.PUBLIC_URL}/Fleta_00.png`} />
             </div>
             <div className="data">
                 <div className="name">
