@@ -1,6 +1,6 @@
 {
-  "short_name": "마비노기 모바일 데이터베이스",
-  "name": "마비노기 모바일 데이터베이스",
+  "short_name": "마비모넷",
+  "name": "마비모넷",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
