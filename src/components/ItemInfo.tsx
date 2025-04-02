@@ -43,7 +43,7 @@ function ItemInfo() {
         <div className="ItemInfo">
             <div className="top">
                 <div className="image-container">
-                    <img src={`${process.env.PUBLIC_URL}/Fleta_00.png`} />
+                    <img src={`${process.env.PUBLIC_URL}/temp.png`} />
                 </div>
                 <div className="data">
                     <div className="name">
