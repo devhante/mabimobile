@@ -5,6 +5,7 @@ import React from 'react';
 import SearchItem from "./SearchItem";
 import { Route, Routes } from "react-router-dom";
 import ItemInfo from "./ItemInfo";
+import NyangGacha from "./NyangGacha";
 
 
 function Content() {
@@ -17,6 +18,7 @@ function Content() {
                 </div>
                 <Routes>
                     <Route path="/:itemId" element={<ItemInfo />} />
+                    <Route path="/nyangGacha" element={<NyangGacha />} />
                 </Routes>
             </div>
         </div>

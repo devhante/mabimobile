@@ -17,6 +17,22 @@ export const getItemsByQuery = async (query: string) => {
 
 export const getItemCraftById = async (id: number) => {
     const response = await axiosInstance.get(`itemCraft/${id}`).then((response) => response.data);
-    console.log(response);
+    return response;
+}
+
+export const postNyangGacha = async (firstSlot: number, firstResult: number, secondSlot: number, secondResult: number, thirdSlot: number, thirdResult: number, fourthSlot: number, fourthResult: number, fifthSlot: number, fifthResult: number) => {
+    const response = await axiosInstance.post(`nyangGachaResult`, {
+        userId: "devhante",
+        firstSlot: firstSlot,
+        firstResult: firstResult,
+        secondSlot: secondSlot,
+        secondResult: secondResult,
+        thirdSlot: thirdSlot,
+        thirdResult: thirdResult,
+        fourthSlot: fourthSlot,
+        fourthResult: fourthResult,
+        fifthSlot: fifthSlot,
+        fifthResult: fifthResult
+    }).then((response) => response.data);
     return response;
 }
