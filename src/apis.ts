@@ -5,8 +5,8 @@ const axiosInstance = axios.create({
     timeout: 5000
 });
 
-export const getItemInfoById = async(id: number) => {
-    const response = await axiosInstance.get(`itemInfo/${id}`).then((response) => response.data);
+export const getItemById = async(id: number) => {
+    const response = await axiosInstance.get(`item/${id}`).then((response) => response.data);
     return response;
 }
 

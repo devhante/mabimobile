@@ -2,7 +2,7 @@ import React from 'react';
 import "./ItemInfo.css"
 import { Link, useParams } from 'react-router-dom';
 import { useQuery } from 'react-query';
-import { getItemCraftById, getItemInfoById } from '../apis';
+import { getItemCraftById, getItemById } from '../apis';
 import { ItemCraftIngredient } from '../types';
 
 function ItemInfo() {
@@ -10,8 +10,8 @@ function ItemInfo() {
     const parsedItemId = itemId ? parseInt(itemId, 10) : null;
 
     const { data: infoData } = useQuery(
-        ['getItemInfoById', parsedItemId],
-        () => (parsedItemId ? getItemInfoById(parsedItemId) : Promise.reject("잘못된 ID")),
+        ['getItemById', parsedItemId],
+        () => (parsedItemId ? getItemById(parsedItemId) : Promise.reject("잘못된 ID")),
         { enabled: !!parsedItemId }
     );
     const { data: craftData } = useQuery(
